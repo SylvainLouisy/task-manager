@@ -4,7 +4,7 @@
   <% @tasks.each do |task| %>
     <p><li class="list-unstyled"><input type="checkbox" <%= task.completed ? "checked" : ""%>>
     <%= link_to "#{task.title}",task_path(task), class:"text-decoration-none" %>
-    <%= link_to "🗑️", task_path(task.id), class: "text-decoration-none", data: { turbo_methode: :delete, tubo_confirm: "Are you sure ?"} %></li></p>
+    <%= link_to "🗑️", task_path(task.id), class: "text-decoration-none", data: { turbo_method: :delete, turbo_confirm: "Are you sure ?"} %></li></p>
   <% end %>
   <tr>
   <p><%= link_to "add new task", new_task_path %></p>
