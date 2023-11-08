@@ -5,7 +5,7 @@
     <h2><li class="list-unstyled">
     <%= render partial: 'status', locals: {task: task} %>
     <%= link_to "#{task.title}",task_path(task) %>
-    <%= link_to "🗑️", task_path(task.id), data: {turbo_method: :delete, turbo_confirm: "Are you sure ?"} %></li></h2>
+    <%= link_to "🗑️", task_path(task.id), data: {turbo_method: :delete, turbo_confirm: "Êtes vous sûrs "} %></li></h2>
   <% end %>
   <hr>
   <h4><%= link_to "➕ Ajouter une nouvelle tâche", new_task_path %></h4>
