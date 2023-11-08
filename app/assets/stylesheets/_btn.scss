@@ -1,0 +1,18 @@
+.btn-modif {
+  border: 1px solid;
+  padding: 8px 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+
+  &:hover{
+    background-color: rgb(184, 184, 184);
+  }
+}
+
+#flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}

@@ -1,11 +1,12 @@
 <div class="container">
-  <h1>Currents Tasks</h1>
+  <h1>Mes tâches</h1>
 
   <% @tasks.each do |task| %>
-    <p><li class="list-unstyled"><input type="checkbox" <%= task.completed ? "checked" : ""%>>
-    <%= link_to "#{task.title}",task_path(task), class:"text-decoration-none" %>
-    <%= link_to "🗑️", task_path(task.id), class: "text-decoration-none", data: { turbo_method: :delete, turbo_confirm: "Are you sure ?"} %></li></p>
+    <h2><li class="list-unstyled">
+    <%= render partial: 'status', locals: {task: task} %>
+    <%= link_to "#{task.title}",task_path(task) %>
+    <%= link_to "🗑️", task_path(task.id), data: {turbo_method: :delete, turbo_confirm: "Are you sure ?"} %></li></h2>
   <% end %>
   <hr>
-  <p><%= link_to "add new task", new_task_path %></p>
+  <h4><%= link_to "➕ Ajouter une nouvelle tâche", new_task_path %></h4>
 </div>

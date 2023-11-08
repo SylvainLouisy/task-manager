@@ -1,0 +1,48 @@
+.form-card {
+  width: 280px;
+  margin: 0 auto;
+  background-color: #fcfcfc;
+  padding: 20px 50px 40px;
+  box-shadow: 1px 4px 10px 1px #aaa;
+  font-family: sans-serif;
+
+  h1{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  input, textarea{
+    margin-bottom: 15px;
+  }
+
+  input[type=text], textarea {
+    display: block;
+    height: 32px;
+    padding: 6px 16px;
+    width: 100%;
+    border: none;
+    background-color: #f3f3f3;
+  }
+
+  input[type=submit]{
+    display: block;
+    margin: 20px auto 0;
+    padding: 8px 4px;
+    border-radius: 8px;
+    border: none;
+    background-color: #DBDBDB;
+    box-shadow: 1px 1px 3px 1px #797979;
+    font-weight: 700;
+    &:hover{
+      background: linear-gradient(#DBDBDB, #c4c4c4);
+    }
+  }
+
+  input[type=checkbox]{
+    float: left;
+  }
+}
+
+.form-card * {
+  box-sizing: border-box;
+}
